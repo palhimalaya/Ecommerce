@@ -1,4 +1,19 @@
+import bcrypt from "bcrypt";
 const data = {
+  users: [
+    {
+      name: "Himalaya",
+      email: "palhimalaya123@gamil.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Narendra",
+      email: "palnarendra123@gamil.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       _id: "1",
@@ -24,42 +39,7 @@ const data = {
       numReviews: 10,
       description: "high quality product",
     },
-    {
-      _id: "2",
-      name: "Adidas Fit Shirt",
-      category: "Shirts",
-      image: "/images/p1.jpg",
-      price: 100,
-      countInStock: 20,
-      brand: "Adidas",
-      rating: 4.0,
-      numReviews: 10,
-      description: "high quality product",
-    },
-    {
-      _id: "2",
-      name: "Adidas Fit Shirt",
-      category: "Shirts",
-      image: "/images/p1.jpg",
-      price: 100,
-      countInStock: 20,
-      brand: "Adidas",
-      rating: 4.0,
-      numReviews: 10,
-      description: "high quality product",
-    },
-    {
-      _id: "2",
-      name: "Adidas Fit Shirt",
-      category: "Shirts",
-      image: "/images/p1.jpg",
-      price: 100,
-      countInStock: 20,
-      brand: "Adidas",
-      rating: 4.0,
-      numReviews: 10,
-      description: "high quality product",
-    },
+
     {
       _id: "3",
       name: "Lacoste Free Shirt",
